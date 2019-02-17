@@ -32,7 +32,110 @@
 </header>
 <div class="container">
     <div class="content">
-
+        <ul class="bredcrumbs">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li></li>
+        </ul>
+        <div class="checkout">
+            <form action="#">
+                <h1></h1>
+                <div class="item">
+                    <label for="Выбор города">Выбор города<span></span></label>
+                    <select name="Выбор города" id="Выбор города">
+                        <option value="Москва, Московская обл., Россия">Москва, Московская обл., Россия</option>
+                        <option value="Санкт-Петербург, Ленинградская обл., Россия">Санкт-Петербург, Ленинградская
+                            обл.,
+                            Россия
+                        </option>
+                        <option value="Рязань, Рязанская обл., Россия">Рязань, Рязанская обл., Россия</option>
+                    </select>
+                </div>
+                <div class="item">
+                    <label>Способ доставки</label>
+                    <ul>
+                        <li>
+                            <input type="radio" name="text" id="delivery">
+                            <label for="delivery">Доставка</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="text" id="expressDelivery">
+                            <label for="expressDelivery">Експресс доставка 450 р</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="text" id="asAGift">
+                            <label for="asAGift">Доставить в подарок 450 р</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="text" id="pickup">
+                            <label for="pickup">Самовывоз из пункта выдачи заказов 0 р</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <label>Адрес доставки</label>
+                    <ul>
+                        <li>
+                            <label for="street">Улица<span>*</span></label>
+                            <input type="text" name="street" id="street">
+                        </li>
+                        <li>
+                            <label for="region">Район<span>*</span></label>
+                            <input type="text" name="region" id="region">
+                        </li>
+                        <li>
+                            <label for="house">Дом<span>*</span></label>
+                            <input type="text" name="house" id="house">
+                        </li>
+                        <li>
+                            <label for="housing">Корпус<span>*</span></label>
+                            <input type="text" name="housing" id="housing">
+                        </li>
+                        <li>
+                            <label for="apartment">Квартира/Офис<span>*</span></label>
+                            <input type="text" name="apartment" id="apartment">
+                        </li>
+                    </ul>
+                    <div class="item">
+                        <label for="message">Дополнительно(номер домофона, номер офиса и т.д)</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <div class="item">
+                        <label>Способ оплаты</label>
+                        <ul>
+                            <li>
+                                <input type="radio" name="text" id="uponReceipt">
+                                <label for="uponReceipt">Оплата при получении</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="text" id="payElectronic">
+                                <label for="payElectronic">Оплата электронным способом(Робокасса)</label>
+                            </li>
+                        </ul>
+                        <div class="item">
+                            <label>Ваши данные</label>
+                            <ul>
+                                <li>
+                                    <label for="name">Имя<span>*</span></label>
+                                    <input type="text" name="name" id="name">
+                                </li>
+                                <li>
+                                    <label for="email">Электронная почта<span>*</span></label>
+                                    <input type="text" name="email" id="email">
+                                </li>
+                                <li>
+                                    <label for="phone">Номер телефона<span>*</span></label>
+                                    <input type="text" name="phone" id="phone">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <input type="submit" value="Продолжить">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 <footer>

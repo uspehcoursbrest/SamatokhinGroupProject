@@ -38,11 +38,11 @@
             <li></li>
         </ul>
         <div class="checkout">
+            <h1></h1>
             <form action="#">
-                <h1></h1>
                 <div class="item">
-                    <label for="Выбор города">Выбор города<span></span></label>
-                    <select name="Выбор города" id="Выбор города">
+                    <label for="choiceTown">Выбор города<span></span></label>
+                    <select name="choiceTown" id="choiceTown">
                         <option value="Москва, Московская обл., Россия">Москва, Московская обл., Россия</option>
                         <option value="Санкт-Петербург, Ленинградская обл., Россия">Санкт-Петербург, Ленинградская
                             обл.,
@@ -57,6 +57,9 @@
                         <li>
                             <input type="radio" name="text" id="delivery">
                             <label for="delivery">Доставка</label>
+                            <span></span>
+                            <p></p>
+                            <p></p>
                         </li>
                         <li>
                             <input type="radio" name="text" id="expressDelivery">
@@ -74,28 +77,28 @@
                 </div>
                 <div class="item">
                     <label>Адрес доставки</label>
-                    <ul>
-                        <li>
+                    <div>
+                        <div>
                             <label for="street">Улица<span>*</span></label>
                             <input type="text" name="street" id="street">
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <label for="region">Район<span>*</span></label>
                             <input type="text" name="region" id="region">
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <label for="house">Дом<span>*</span></label>
                             <input type="text" name="house" id="house">
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <label for="housing">Корпус<span>*</span></label>
                             <input type="text" name="housing" id="housing">
-                        </li>
-                        <li>
+                        </div>
+                        <div>
                             <label for="apartment">Квартира/Офис<span>*</span></label>
                             <input type="text" name="apartment" id="apartment">
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                     <div class="item">
                         <label for="message">Дополнительно(номер домофона, номер офиса и т.д)</label>
                         <textarea name="message" id="message"></textarea>
@@ -114,20 +117,20 @@
                         </ul>
                         <div class="item">
                             <label>Ваши данные</label>
-                            <ul>
-                                <li>
+                            <div>
+                                <div>
                                     <label for="name">Имя<span>*</span></label>
                                     <input type="text" name="name" id="name">
-                                </li>
-                                <li>
+                                </div>
+                                <div>
                                     <label for="email">Электронная почта<span>*</span></label>
                                     <input type="text" name="email" id="email">
-                                </li>
-                                <li>
+                                </div>
+                                <div>
                                     <label for="phone">Номер телефона<span>*</span></label>
                                     <input type="text" name="phone" id="phone">
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                         </div>
                         <div class="item">
                             <input type="submit" value="Продолжить">

@@ -345,3 +345,46 @@ footer .socLinks a {
     color: #0069b4;
 }
 
+.container .checkout h1 {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.citySelection label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+    font-style: italic;
+}
+
+.citySelection select* {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+}
+
+.content h2 {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.delivery ul li label* {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.delivery ul p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.delivery ul .orange {
+    color: #f26522;
+}
+

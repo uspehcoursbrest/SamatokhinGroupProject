@@ -36,7 +36,7 @@
 </header>
 <div class="container">
     <div class="content">
-        <ul class="bredcrumbs">
+        <ul class="breadcrumbs">
             <li><a href="#"></a>Главная</li>
             <li><a href="#"></a>Корзина</li>
             <li>Оформление заказа</li>
@@ -44,7 +44,7 @@
         <div class="checkout">
             <h1>Оформление заказа</h1>
             <form action="#">
-                <div class="item">
+                <div class="citySelection">
                     <label for="choiceTown">Выбор города<span></span></label>
                     <select name="choiceTown" id="choiceTown">
                         <option value="Москва, Московская обл., Россия">Москва, Московская обл., Россия</option>
@@ -55,38 +55,39 @@
                         <option value="Рязань, Рязанская обл., Россия">Рязань, Рязанская обл., Россия</option>
                     </select>
                 </div>
-                <div class="item">
-                    <label>Способ доставки</label>
+                <div class="delivery">
+                    <h2>Способ доставки</h2>
                     <ul>
                         <li>
                             <input type="radio" name="text" id="delivery">
                             <label for="delivery">Доставка курьерской службой по Москве и МО (IM Logistics) 0 р.</label>
-                            <span>Заказ оформленный:</span>
-                            <p>до 16:00 будет доставлен на следующий рабочий день;</p>
-                            <p>- после 16:00 будет доставлен через один рабочий день;</p>
+                            <p>Заказ оформленный:<br>-до 16:00 будет доставлен на следующий рабочий день;- после 16:00
+                                будет доставлен через один рабочий день;</p>
                         </li>
                         <li>
                             <input type="radio" name="text" id="expressDelivery">
                             <label for="expressDelivery">Экспресс-доставка 450 р.</label>
-                            <p>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах МКАД. Доставка
-                                осуществляется только по предоплате. Услуга "товары на выбор" при данном типе доставки
+                            <p>День в день, в течение 4-х часов (пн-пт с 10 до 19 часов). В пределах<br> МКАД. Доставка
+                                осуществляется только по предоплате. Услуга "товары<br> на выбор" при данном типе
+                                доставки
                                 недоступна.</p>
                         </li>
                         <li>
                             <input type="radio" name="text" id="asAGift">
                             <label for="asAGift">Доставить в подарок 450 р.</label>
-                            <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах МКАД. Доставка
-                                осуществляется только по предоплате. Дополнительная услуга — подарочная упаковка</p>
+                            <p>День в день, в течение 4-х часов (пн-пт с 10-19 часов). В пределах<br> МКАД. Доставка
+                                осуществляется только по предоплате.</p>
+                            <p class="orange"> Дополнительная услуга — подарочная упаковка</p>
                         </li>
                         <li>
                             <input type="radio" name="text" id="pickup">
                             <label for="pickup">Самовывоз из пункта выдачи заказов 0 р.</label>
-                            <span>-2 рабочих дня.</span>
+                            <p>-2 рабочих дня.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="item">
-                    <label>Адрес доставки</label>
+                    <h2>Адрес доставки</h2>
                     <div>
                         <div>
                             <label for="street">Улица<span>*</span></label>
@@ -114,7 +115,7 @@
                         <textarea name="message" id="message"></textarea>
                     </div>
                     <div class="item">
-                        <label>Способ оплаты</label>
+                        <h2>Способ оплаты</h2>
                         <ul>
                             <li>
                                 <input type="radio" name="text" id="uponReceipt">
@@ -128,7 +129,7 @@
                             </li>
                         </ul>
                         <div class="item">
-                            <label>Ваши данные</label>
+                            <h2>Ваши данные</h2>
                             <div>
                                 <div>
                                     <label for="name">Имя<span>*</span></label>

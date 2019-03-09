@@ -22,6 +22,11 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 }
+.clear::after {
+    content: '';
+    display: block;
+    clear: both;
+}
 
 header .login {
     font-size: 13px;
@@ -33,6 +38,10 @@ header .menu a {
     font-size: 13px;
     line-height: 28px;
     color: #333333;
+}
+header .menu li {
+    display: inline-block;
+    margin-right: 20px;
 }
 
 header .phone {
@@ -87,16 +96,29 @@ header .icon-phone {
     font-weight: bold;
     line-height: 17px;
     color: #333333;
+    display: block;
 }
-
 .advantages .item p {
     font-size: 12px;
     line-height: 14px;
     color: #666666;
 }
 
+.advantages {
+    width: calc(100% - 320px);
+    float: left;
+}
+
+.advantages .item {
+    width: 25%;
+    float: left;
+}
+
 .subscribe {
     background-color: #63b849;
+    width: 320px;
+    float: left;
+    padding: 20px;
 }
 
 .subscribe label {
@@ -109,7 +131,8 @@ header .icon-phone {
     line-height: 37px;
     color: #999999;
     border: none;
-    padding: 10px;
+    padding-left: 10px;
+    width: 100%;
 }
 
 .subscribe button {
@@ -131,6 +154,15 @@ header .icon-phone {
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px dashed #666666;
+    display: inline-block;
+    margin-right: 20px;
+}
+.advSub + .catalog {
+    margin-top: 30px;
+}
+
+.filter + cards {
+    margin-top: 30px;
 }
 
 .filter li a {
@@ -206,6 +238,12 @@ header .icon-phone {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.tabs li {
+    display: inline-block;
+    padding: 0px 15px;
+}
+
 .tabs li a {
     font-size: 14px;
     text-decoration: none;
@@ -237,6 +275,24 @@ footer a {
 
 footer .socLinks a {
     font-size: 21px;
+}
+.footMenu {
+    width: 50%;
+    float: left;
+}
+.footMenu > li {
+    width: 50%;
+    float: left;
+}
+
+.footContacts {
+    width: 25%;
+    float: left;
+}
+
+.copyright {
+    width: 25%;
+    float: left;
 }
 
 .banner .sale {
@@ -288,3 +344,4 @@ footer .socLinks a {
     line-height: 22px;
     color: #0069b4;
 }
+

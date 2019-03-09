@@ -239,12 +239,52 @@ footer .socLinks a {
     font-size: 21px;
 }
 
-.sale {
+.banner .sale {
     width: 305px;
     height: 360px;
 }
 
-.slider {
+.banner .slider {
     width: 640px;
     height: 360px;
+}
+
+.content .breadcrumbs li,
+.content .breadcrumbs li a {
+    font-size: 12px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #999999;
+}
+
+.content .news h1 {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.content .news h2 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.content .news span {
+    font-size: 12px;
+    line-height: 22px;
+    color: #aaaaaa;
+}
+
+.content .news p {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.content .moreNews {
+    font-size: 13px;
+    line-height: 22px;
+    color: #0069b4;
 }

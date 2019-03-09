@@ -239,5 +239,12 @@ footer .socLinks a {
     font-size: 21px;
 }
 
+.sale {
+    width: 305px;
+    height: 360px;
+}
 
-
+.slider {
+    width: 640px;
+    height: 360px;
+}

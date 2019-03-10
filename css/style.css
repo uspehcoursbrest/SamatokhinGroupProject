@@ -352,14 +352,14 @@ footer .socLinks a {
     color: #333333;
 }
 
-.citySelection label {
+.content .citySelection label {
     font-size: 13px;
     line-height: 22px;
     color: #666666;
     font-style: italic;
 }
 
-.citySelection select* {
+.content .citySelection select* {
     font-size: 13px;
     line-height: 22px;
     color: #666666;
@@ -386,5 +386,50 @@ footer .socLinks a {
 
 .delivery ul .orange {
     color: #f26522;
+}
+
+.content .deliveryAddress label {
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+    font-style: italic;
+}
+
+.content .deliveryAddress span {
+    color: #ed1c24;
+}
+
+.content .paymentMeth label {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+    font-style: normal;
+}
+
+.content .paymentMeth p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.content .yourDate label{
+    font-size: 13px;
+    line-height: 22px;
+    color: #666666;
+    font-style: italic;
+}
+
+.content .yourDate span {
+    color: #ed1c24;
+}
+
+.content .yourDate .dateButton input {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    width: 185px;
+    background-color: #ea5b0c;
+    border: none;
 }
 

@@ -1,6 +1,6 @@
 * {
-     box-sizing: border-box;
- }
+    box-sizing: border-box;
+}
 
 body {
     margin: 0 auto;
@@ -22,13 +22,38 @@ ul {
     margin: 0 auto;
     padding: 0 15px;
 }
+
 .clear::after {
-    content: '';
+    content: "";
     display: block;
     clear: both;
 }
 
-header .login {
+.headWrap {
+    display: table;
+    width: 100%;
+}
+
+.headWrap > div {
+    display: table-cell;
+    width: 33.333333px;
+    vertical-align: top;
+}
+
+.headWrap .logo {
+    text-align: center;
+}
+
+.headWrap .right {
+    text-align: right;
+}
+
+header .callback {
+    display: table;
+    margin-left: auto;
+}
+
+header .login{
     font-size: 13px;
     line-height: 20px;
     color: #0069b4;
@@ -39,7 +64,8 @@ header .menu a {
     line-height: 28px;
     color: #333333;
 }
-header .menu li {
+
+.menu li {
     display: inline-block;
     margin-right: 20px;
 }
@@ -47,8 +73,8 @@ header .menu li {
 header .phone {
     font-size: 20px;
     line-height: 20px;
-    text-decoration: none;
     color: #333333;
+    text-decoration: none;
 }
 
 header .callback {
@@ -59,7 +85,7 @@ header .callback {
     border-bottom: 1px dashed #0069b4;
 }
 
-header p.timing {
+header .timing {
     font-size: 13px;
     line-height: 19px;
     color: #999999;
@@ -81,14 +107,30 @@ header .basket span {
 }
 
 header [class*="icon"] {
-    color: #cbebd5;
+    color: #caebd4;
 }
 
 header .icon-user {
     font-size: 18px;
 }
+
 header .icon-phone {
     font-size: 20px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .sale {
+    width: 304px;
+    height: 360px;
+}
+
+.content .slider {
+    width: 640px;
+    height: 360px;
 }
 
 .advantages .item span {
@@ -98,6 +140,7 @@ header .icon-phone {
     color: #333333;
     display: block;
 }
+
 .advantages .item p {
     font-size: 12px;
     line-height: 14px;
@@ -114,8 +157,10 @@ header .icon-phone {
     float: left;
 }
 
+
+
 .subscribe {
-    background-color: #63b849;
+    background-color: #64ba4a;
     width: 320px;
     float: left;
     padding: 20px;
@@ -135,40 +180,85 @@ header .icon-phone {
     width: 100%;
 }
 
+.subscribe .wrap {
+    display: table;
+    width: 100%;
+}
+
 .subscribe button {
     font-size: 13px;
     line-height: 37px;
     text-align: center;
     color: #ffffff;
+    border: none;
     width: 185px;
     background-color: #259c47;
-    border: none;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .subscribe .wrap span {
     font-size: 12px;
     color: rgba(255,255,255,0.5);
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 25px;
 }
 
-.filter li{
+.advSub + .catalog {
+    margin-top: 30px;
+}
+
+.filter li {
     font-size: 13px;
     line-height: 16px;
     border-bottom: 1px dashed #666666;
     display: inline-block;
     margin-right: 20px;
 }
-.advSub + .catalog {
-    margin-top: 30px;
-}
-
-.filter + cards {
-    margin-top: 30px;
-}
 
 .filter li a {
     text-decoration: none;
     color: #666666;
 }
+
+.filter + .cards {
+    margin-top: 30px;
+}
+
+.card {
+    position: relative;
+}
+
+.status {
+    position: absolute;
+    display: block;
+    top: -3px;
+    left: -3px;
+    width: 43px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.status.hit {
+    background-color: #6eddcc;
+}
+
+.status.discount {
+    background-color: #ffed03;
+}
+
+.status.new {
+    background-color: #78ec71;
+}
+
+.card .title {
+    font-size: 15px;
+    line-height: 22px;
+    color: #333333;
+}
+
 .card .img {
     width: 220px;
     height: 220px;
@@ -176,11 +266,12 @@ header .icon-phone {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 }
-.card .title {
-    font-size: 15px;
-    line-height: 22px;
-    color: #333333;
+
+.card .small {
+    width: 50px;
+    height: 50px;
 }
 
 .card a {
@@ -194,7 +285,6 @@ header .icon-phone {
     font-weight: 600;
     line-height: 30px;
     color: #333333;
-    vertical-align: top;
 }
 
 .card .price .old {
@@ -213,7 +303,12 @@ header .icon-phone {
     color: #ffffff;
     width: 100px;
     background-color: #ff7200;
-    border: none
+    border: none;
+}
+
+.widgets .wrapper{
+    display: flex;
+    justify-content: space-between;
 }
 
 .widgets h1 {
@@ -223,15 +318,18 @@ header .icon-phone {
     text-align: center;
     color: #666666;
 }
+
 .widgets .item:first-child,
 .widgets .item:last-child {
     width: 290px;
     height: 400px;
 }
+
 .widgets .item:nth-child(2) {
     width: 350px;
     height: 400px;
 }
+
 .widgets .item {
     -webkit-background-size: cover;
     background-size: cover;
@@ -239,16 +337,16 @@ header .icon-phone {
     background-position: center;
 }
 
-.tabs li {
-    display: inline-block;
-    padding: 0px 15px;
-}
-
 .tabs li a {
     font-size: 14px;
     text-decoration: none;
     line-height: 45px;
     color: #999999;
+}
+
+.tabs li {
+    display: inline-block;
+    padding: 0 15px;
 }
 
 .info .tabContent {
@@ -273,13 +371,15 @@ footer a {
     color: #ffffff;
 }
 
-footer .socLinks a {
+footer .soclincs a {
     font-size: 21px;
 }
+
 .footMenu {
     width: 50%;
     float: left;
 }
+
 .footMenu > li {
     width: 50%;
     float: left;
@@ -295,18 +395,118 @@ footer .socLinks a {
     float: left;
 }
 
-.banner .sale {
-    width: 305px;
-    height: 360px;
+header .menu  .corp {
+    color: #ff7200;
 }
 
-.banner .slider {
-    width: 640px;
-    height: 360px;
+.content .caption {
+    font-size: 12px;
+    line-height: 22px;
+    color: #999999;
 }
 
-.content .breadcrumbs li,
-.content .breadcrumbs li a {
+.content .caption a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.corpClients .form>span {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.corpClients form {
+    background-color: #f9f9f9;
+}
+
+.corpClients form label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: italic;
+    color: #666666;
+}
+
+.corpClients .logo>label {
+    font-size: 13px;
+    line-height: normal;
+    font-style: normal;
+    color: #333333;
+}
+
+.corpClients .logo span {
+    font-size: 11px;
+    color: #999999;
+}
+
+.corpClients .logo li label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: normal;
+    color: #666666;
+}
+
+.corpClients .input label {
+    font-size: 13px;
+    line-height: 22px;
+    font-style: normal;
+    text-decoration: underline;
+    color: #229647;
+}
+
+.corpClients .input span {
+    font-size: 13px;
+    color: #999999;
+}
+
+.corpClients .figure option {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.corpClients .date input {
+    font-size: 13px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.corpClients .info textarea {
+    width: 280px;
+    height: 125px;
+}
+
+.corpClients form button {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: #ff7200;
+    border: none;
+}
+
+.product span {
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.product p {
+    font-size: 13px;
+    line-height: 30px;
+    color: #333333;
+}
+
+.product a {
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: #64ba4a;
+    text-decoration: none;
+}
+
+.content .bredcrumbs li,
+.content .bredcrumbs li a {
     font-size: 12px;
     line-height: 22px;
     text-decoration: none;
@@ -343,6 +543,14 @@ footer .socLinks a {
     font-size: 13px;
     line-height: 22px;
     color: #0069b4;
+}
+
+.content .breadcrumbs li,
+.content .breadcrumbs li a {
+    font-size: 12px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #999999;
 }
 
 .container .checkout h1 {
@@ -432,4 +640,3 @@ footer .socLinks a {
     background-color: #ea5b0c;
     border: none;
 }
-

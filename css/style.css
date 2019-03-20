@@ -279,7 +279,7 @@ header .icon-phone {
 .card .content .buy {
     position: absolute;
     width: 100%;
-    left: 0px;
+    left: 0;
     bottom: 10px;
     display: flex;
     justify-content: space-between;

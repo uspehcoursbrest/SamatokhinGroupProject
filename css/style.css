@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -399,7 +401,29 @@ header .icon-phone {
 }
 
 .info .title {
+    display: block;
     text-transform: uppercase;
+    padding-left: 27px;
+    position: relative;
+}
+
+.info .title::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 5px solid #333333;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -3px;
+    transition: 0.3s;
+}
+
+.info .title.active::before {
+    transform: rotate(180deg);
 }
 
 footer {
@@ -586,6 +610,59 @@ header .menu .corp {
     font-size: 13px;
     line-height: 22px;
     color: #0069b4;
+}
+
+.orderList li {
+    padding-left: 40px;
+}
+
+.orderList label {
+    position: relative;
+    padding-left: 40px;
+    margin-left: -40px;
+}
+
+.radioBtn {
+    display: none;
+}
+
+.radioBtn:not(checked) + label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.radioBtn:not(checked) + label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    background-color: #51bf87;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.radioBtn:checked + label::before {
+    border-color: #51bf87;
+}
+
+.radioBtn:checked + label::after {
+    opacity: 1;
+}
+
+.radioBtn + label {
+    cursor: pointer;
 }
 
 .content .breadcrumbs li,

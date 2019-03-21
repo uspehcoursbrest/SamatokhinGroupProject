@@ -572,8 +572,8 @@ header .menu .corp {
     text-decoration: none;
 }
 
-.content .bredcrumbs li,
-.content .bredcrumbs li a {
+.content .breadcrumbs li,
+.content .breadcrumbs li a {
     font-size: 12px;
     line-height: 22px;
     text-decoration: none;
@@ -614,6 +614,7 @@ header .menu .corp {
 
 .orderList li {
     padding-left: 40px;
+    position: relative;
 }
 
 .orderList label {
@@ -671,6 +672,11 @@ header .menu .corp {
     line-height: 22px;
     text-decoration: none;
     color: #999999;
+    display: inline-block;
+}
+
+.content .breadcrumbs li + li {
+    margin-left: 3px;
 }
 
 .container .checkout h1 {
@@ -678,13 +684,16 @@ header .menu .corp {
     line-height: 22px;
     font-weight: 600;
     color: #333333;
+    padding: 24px 0px;
 }
 
 .content .citySelection label {
     font-size: 13px;
+    display: block;
     line-height: 22px;
     color: #666666;
     font-style: italic;
+    padding-bottom: 6px;
 }
 
 .content .citySelection select * {
@@ -698,6 +707,7 @@ header .menu .corp {
     line-height: 22px;
     font-weight: 600;
     color: #333333;
+    margin: 46px 0px 26px;
 }
 
 .delivery ul li label * {
@@ -710,10 +720,12 @@ header .menu .corp {
     font-size: 12px;
     line-height: 18px;
     color: #666666;
+    padding-bottom: 23px;
 }
 
 .delivery ul .orange {
     color: #f26522;
+    margin-top: -24px;
 }
 
 .content .deliveryAddress label {
@@ -721,6 +733,7 @@ header .menu .corp {
     line-height: 22px;
     color: #666666;
     font-style: italic;
+    display: block;
 }
 
 .content .deliveryAddress span {
@@ -759,4 +772,11 @@ header .menu .corp {
     width: 185px;
     background-color: #ea5b0c;
     border: none;
+}
+
+/*ПОЗИИОНИРОВАНИЕ "ORDER"*/
+
+.content .checkout .citySelection select {
+    width: 285px;
+    height: 25px;
 }

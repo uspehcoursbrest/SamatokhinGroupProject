@@ -36,7 +36,7 @@ ul {
     z-index: 1;
 }
 
-.invisLink > a{
+.invisLink > a {
     display: block;
     position: absolute;
     left: 0;
@@ -56,6 +56,7 @@ ul {
 
 header {
     padding-top: 27px;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .headWrap > div {
@@ -728,12 +729,21 @@ header .menu .corp {
     margin-top: -24px;
 }
 
+.delivery label {
+    font-size: 13px;
+    line-height: 19px;
+    color: #333333;
+    font-style: normal;
+    font-weight: 600;
+}
+
 .content .deliveryAddress label {
     font-size: 13px;
     line-height: 22px;
     color: #666666;
     font-style: italic;
     display: block;
+    padding-bottom: 5px;
 }
 
 .content .deliveryAddress span {
@@ -745,12 +755,14 @@ header .menu .corp {
     line-height: 19px;
     color: #333333;
     font-style: normal;
+    font-weight: 600;
 }
 
 .content .paymentMeth p {
     font-size: 12px;
     line-height: 18px;
     color: #666666;
+    padding-top: 9px;
 }
 
 .content .yourDate label {
@@ -758,6 +770,8 @@ header .menu .corp {
     line-height: 22px;
     color: #666666;
     font-style: italic;
+    display: block;
+    padding-top: 15px;
 }
 
 .content .yourDate span {
@@ -772,11 +786,54 @@ header .menu .corp {
     width: 185px;
     background-color: #ea5b0c;
     border: none;
-}
+    margin: 33px 0px 67px;
 
-/*ПОЗИИОНИРОВАНИЕ "ORDER"*/
+}
 
 .content .checkout .citySelection select {
     width: 285px;
+    height: 25px;
+}
+
+.deliveryAddress input {
+    width: 288px;
+    height: 25px;
+}
+
+.deliveryAddress .numHouse {
+    width: 290px;
+    float: left;
+}
+
+.deliveryAddress .numHouse div:first-child {
+    float: left;
+}
+
+.deliveryAddress .numHouse div:nth-child(2) {
+    float: left;
+}
+
+.deliveryAddress .numHouse div:last-child {
+    float: left;
+}
+
+.numHouse div:first-child input {
+    width: 58px;
+}
+
+.numHouse div:nth-child(2) input {
+    width: 58px;
+}
+
+.numHouse div:last-child input {
+    width: 97px;
+}
+
+.deliveryAddress .numHouse div {
+    padding: 0px 22px 0px 0px;
+}
+
+.content .yourDate input {
+    width: 288px;
     height: 25px;
 }

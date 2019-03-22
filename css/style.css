@@ -52,11 +52,11 @@ ul {
 .headWrap {
     display: table;
     width: 100%;
+    border-bottom: 1px solid #e4e4e4;
 }
 
 header {
     padding-top: 27px;
-    border-bottom: 1px solid #e4e4e4;
 }
 
 .headWrap > div {
@@ -680,12 +680,35 @@ header .menu .corp {
     margin-left: 3px;
 }
 
+.content {
+    position: relative;
+}
+
+.ofor::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #00a48c;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    margin-bottom: -138px;
+    margin-left: 268px;
+}
+
 .container .checkout h1 {
     font-size: 25px;
     line-height: 22px;
     font-weight: 600;
     color: #333333;
     padding: 24px 0px;
+}
+
+.citySelection {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 26px;
 }
 
 .content .citySelection label {
@@ -708,13 +731,17 @@ header .menu .corp {
     line-height: 22px;
     font-weight: 600;
     color: #333333;
-    margin: 46px 0px 26px;
+    margin: 22px 0px 26px;
 }
 
 .delivery ul li label * {
     font-size: 13px;
     line-height: 19px;
     color: #333333;
+}
+
+.delivery .orderList {
+    border-bottom: 1px solid #e4e4e4;
 }
 
 .delivery ul p {
@@ -750,6 +777,17 @@ header .menu .corp {
     color: #ed1c24;
 }
 
+.deliveryAddress {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 23px;
+}
+
+.deliveryAddress .message {
+    display: block;
+    float: left;
+    margin-bottom: 50px;
+}
+
 .content .paymentMeth label {
     font-size: 13px;
     line-height: 19px;
@@ -763,6 +801,16 @@ header .menu .corp {
     line-height: 18px;
     color: #666666;
     padding-top: 9px;
+}
+
+.paymentMeth {
+    border-bottom: 1px solid #e4e4e4;
+    padding-bottom: 21px;
+
+}
+
+.yourDate {
+    padding-top: 20px;
 }
 
 .content .yourDate label {
@@ -786,8 +834,8 @@ header .menu .corp {
     width: 185px;
     background-color: #ea5b0c;
     border: none;
-    margin: 33px 0px 67px;
-
+    margin-top: 34px;
+    margin-bottom: 67px;
 }
 
 .content .checkout .citySelection select {

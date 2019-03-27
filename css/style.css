@@ -170,11 +170,17 @@ header .icon-phone {
 .banner .sale {
     width: 305px;
     height: 360px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .banner .slider {
     width: 640px;
     height: 360px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .content .sale {
@@ -282,6 +288,10 @@ header .icon-phone {
 
 .filter + .cards {
     margin-top: 55px;
+}
+
+.filterSelect {
+    display: none;
 }
 
 .cards {
@@ -490,6 +500,7 @@ footer {
     color: #ffffff;
     background-color: #64ba4a;
     padding: 20px 0;
+    position: relative;
 }
 
 footer .copyright span {
@@ -504,6 +515,10 @@ footer a {
 footer .soclincs a {
     font-size: 21px;
     padding: 0 5px;
+}
+
+.soclincs div {
+    display: inline-block;
 }
 
 .footmenu {
@@ -1167,3 +1182,4 @@ header .menu  .corp {
     border-top: 1px solid #e4e4e4;
     margin-top: 20px;
 }
+

@@ -36,7 +36,7 @@ a, button {
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s ;
+    transition: all 0.3s;
 }
 
 a:hover,
@@ -90,7 +90,7 @@ header .left .menu {
 }
 
 
-header .login{
+header .login {
     font-size: 13px;
     line-height: 20px;
     color: #0069b4;
@@ -252,12 +252,12 @@ header .icon-phone {
     width: 185px;
     background-color: #259c47;
     display: table-cell;
-    vertical-align:  middle;
+    vertical-align: middle;
 }
 
 .subscribe .wrap span {
     font-size: 12px;
-    color: rgba(255,255,255,0.5);
+    color: rgba(255, 255, 255, 0.5);
     display: table-cell;
     vertical-align: middle;
     padding-left: 25px;
@@ -310,7 +310,7 @@ header .icon-phone {
     height: 365px;
     background-color: #ffffff;
     border: 1px solid #e1e1e1;
-    box-shadow: 0 7px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
     z-index: -1;
 }
 
@@ -487,7 +487,7 @@ header .icon-phone {
     margin-left: 40px;
 }
 
-.accordion > div p+ p {
+.accordion > div p + p {
     padding-top: 20px;
 }
 
@@ -573,8 +573,7 @@ footer .soclincs a {
 /*CorpClients*/
 
 
-
-header .menu  .corp {
+header .menu .corp {
     color: #ff7200;
 }
 
@@ -942,17 +941,21 @@ header .menu  .corp {
     line-height: 22px;
     color: #0069b4;
 }
+
 .orderList li {
     padding-left: 40px;
 }
+
 .orderList label {
     position: relative;
     padding-left: 40px;
     margin-left: -40px;
 }
+
 .radioBtn {
     display: none;
 }
+
 .radioBtn:not(checked) + label::before {
     content: "";
     display: block;
@@ -965,6 +968,7 @@ header .menu  .corp {
     border-radius: 50%;
     transition: all 0.3s;
 }
+
 .radioBtn:not(checked) + label::after {
     content: "";
     display: block;
@@ -978,12 +982,15 @@ header .menu  .corp {
     opacity: 0;
     transition: all 0.3s;
 }
+
 .radioBtn:checked + label::before {
     border-color: #51df87;
 }
+
 .radioBtn:checked + label::after {
     opacity: 1;
 }
+
 .radioBtn + label {
     cursor: pointer;
 }
@@ -1200,6 +1207,7 @@ header .menu  .corp {
 .numHouse div:last-child input {
     width: 100px;
 }
+
 .content .yourDate input {
     width: 288px;
     height: 25px;
@@ -1237,6 +1245,23 @@ header.mobile {
 
 .up {
     position: fixed;
-    left: 10px;
+    left: 20px;
     bottom: 10px;
-    }
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+    background-color: #64ba4a;
+    border: none;
+    outline: none;
+}
+
+.up:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    border-bottom: solid 13px #fff;
+    border-left: solid 9px transparent;
+    border-right: solid 9px transparent;
+    top: calc(50% - 8px);
+    left: calc(50% - 9px);
+}

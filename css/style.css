@@ -1253,6 +1253,7 @@ header.mobile {
     background-color: #64ba4a;
     border: none;
     outline: none;
+    z-index: 1;
 }
 
 .up:before {

@@ -11,8 +11,7 @@ $(document).ready(function () {
         $(this).siblings('div').stop().slideToggle(500);
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
-        }
-        else {
+        } else {
             $(this).addClass('active');
         }
     })
@@ -27,8 +26,19 @@ $(document).ready(function () {
     })
     btnUp.click(function () {
         $('body,html').animate({
-            scrollTop:0
+            scrollTop: 0
         }, 500);
         return false
     });
+    $("#tabs").tabs();
+    var slider = $('.slides');
+    slider.owlCarousel({
+        items: 1,
+        dotsContainer: '.dots',
+        loop: true,
+        autoplay: true,
+        autoplayHoverPause: true
+    });
+    $('select').selectric();
+
 })
